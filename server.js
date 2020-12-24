@@ -13,8 +13,11 @@ const db = knex({
   // connect to your own database here
   client: 'pg',
   connection: {
-    connectionString: process.env.DATABASE_URL,
-    ssl: true,
+    host : 'ec2-34-204-121-199.compute-1.amazonaws.com',
+    user : 'ywjcdncvoeursc',
+    port: '5432',
+    password : 'c3fc0347041eacb5cd60a2e02453bbf8dfded8dda36beb217f29103f5167732a',
+    database : 'db753atbg58l65'
   }
 });
 
